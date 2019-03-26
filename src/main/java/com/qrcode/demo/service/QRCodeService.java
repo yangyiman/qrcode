@@ -25,6 +25,7 @@ public class QRCodeService {
     public String crateQRCode(String content, int width, int height) throws IOException {
 
         String resultImage = "";
+        // content不为空
         if (!StringUtils.isEmpty(content)) {
             ServletOutputStream stream = null;
             ByteArrayOutputStream os = new ByteArrayOutputStream();
